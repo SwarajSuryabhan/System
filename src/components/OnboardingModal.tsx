@@ -28,6 +28,7 @@ export const OnboardingModal: React.FC = () => {
         <span className="absolute -bottom-1 -right-1 w-5 h-5 border-b-2 border-r-2 border-cyan-300" />
 
         <div className="text-center space-y-4">
+
           <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-cyan-950/80 border border-cyan-500/40 text-cyan-300 text-xs font-mono-tech tracking-wider">
             <Terminal className="w-3.5 h-3.5 animate-pulse text-cyan-400" />
             <span>[SYSTEM NOTIFICATION]</span>
@@ -79,6 +80,11 @@ export const OnboardingModal: React.FC = () => {
               <ChevronRight className="w-4 h-4" />
             </button>
           </form>
+
+          {/* Created By Credit */}
+          <p className="text-[10px] text-slate-600 font-mono-tech tracking-widest pt-2 select-none">
+            created by <span className="text-slate-500">Swaraj Suryabhan</span>
+          </p>
         </div>
       </div>
     </div>
