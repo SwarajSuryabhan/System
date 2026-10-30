@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="100%" height="100%">
+  <defs>
+    <radialGradient id="bgGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#0a1936" />
+      <stop offset="100%" stop-color="#030712" />
+    </radialGradient>
+    <linearGradient id="neonCyan" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#00f0ff" />
+      <stop offset="50%" stop-color="#00b4d8" />
+      <stop offset="100%" stop-color="#38bdf8" />
+    </linearGradient>
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="8" result="blur" />
+      <feMerge>
+        <feMergeNode in="blur" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+  </defs>
+  <!-- Background -->
+  <rect width="512" height="512" rx="110" fill="url(#bgGlow)" stroke="#00e5ff" stroke-width="6" stroke-opacity="0.6"/>
+  <!-- Tech Grid Lines -->
+  <line x1="60" y1="256" x2="452" y2="256" stroke="#00e5ff" stroke-width="1.5" stroke-opacity="0.25" stroke-dasharray="8 6" />
+  <line x1="256" y1="60" x2="256" y2="452" stroke="#00e5ff" stroke-width="1.5" stroke-opacity="0.25" stroke-dasharray="8 6" />
+  <!-- Hexagon / Crest Outline -->
+  <polygon points="256,70 410,160 410,340 256,430 102,340 102,160" fill="none" stroke="url(#neonCyan)" stroke-width="6" filter="url(#glow)"/>
+  <!-- Inner Dagger / Monarch Blade -->
+  <path d="M256 120 L285 240 L275 350 L256 400 L237 350 L227 240 Z" fill="url(#neonCyan)" filter="url(#glow)" />
+  <!-- Glowing Eye / Rune Core -->
+  <ellipse cx="256" cy="256" rx="55" ry="30" fill="#030712" stroke="#00f0ff" stroke-width="5" filter="url(#glow)" />
+  <circle cx="256" cy="256" r="16" fill="#00f0ff" filter="url(#glow)" />
+  <circle cx="256" cy="256" r="6" fill="#ffffff" />
+  <!-- Corner Tech Accents -->
+  <path d="M80 120 L80 80 L120 80" stroke="#00f0ff" stroke-width="4" fill="none" />
+  <path d="M432 120 L432 80 L392 80" stroke="#00f0ff" stroke-width="4" fill="none" />
+  <path d="M80 392 L80 432 L120 432" stroke="#00f0ff" stroke-width="4" fill="none" />
+  <path d="M432 392 L432 432 L392 432" stroke="#00f0ff" stroke-width="4" fill="none" />
+</svg>
